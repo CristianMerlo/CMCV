@@ -1,0 +1,110 @@
+body {
+    background-color: #fff;
+    font-family: Arial;
+    color: #333;
+ }
+ 
+ h1 {
+    text-align: center;  
+ }
+ 
+ h2 {
+    text-align: center;   
+ }
+ 
+ 
+ .header {
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .foto {
+    margin-right: 20px; 
+    text-align: center;
+ }
+ 
+ .foto img {
+    border: 1px solid #333;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;   
+ }
+ 
+ .timeline {
+   position: relative;
+   width: 100%;
+ }
+ 
+ .timeline::after {
+   content: '';
+   position: absolute;
+   width: 6px;
+   background-color: #333;
+ }
+ 
+ .container {
+   text-align: center;
+   width: 100%; 
+ }
+ 
+ .content {
+   margin: 0 auto;
+   width: 80%;  
+ }
+ 
+ .date {
+   font-weight: bold;
+   color: #1781e5;
+   margin-bottom: 20px;  
+ }
+ 
+ .educacion {
+    text-align: center;
+    margin: 0 auto; 
+    width: 80%;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  
+.educacion ul li {
+  margin-bottom: 10px;
+}
+.timeline .content .button {
+    background-color: #337ab7;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+.btn {
+  background-color: #337ab7;
+  color: #fff;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.linkedin-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn.linkedin {
+    background-color: #007BBD;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
+  .btn.linkedin i {
+    margin-right: 10px;
+  }
+  
+  
+   
+  

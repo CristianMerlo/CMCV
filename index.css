@@ -1,47 +1,98 @@
 body {
-  background-color: #fff;
+  background: linear-gradient(180deg, #f0f7ff, #a8ceff, #80b6ff);
+  background-size: 200% 200%;
+  animation: gradient 13s ease-in-out infinite;
   font-family: 'Roboto', sans-serif;
   color: #333;
   margin: 0;
+  line-height: 1.6;
+  position: relative;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
 }
 
 h1 {
   text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
+  font-size: 2.8em;
+  margin: 1em 0 0.5em;
   color: #2c3e50;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 h2 {
   text-align: center;
-  font-size: 1.8em;
-  margin-top: 1em;
-  margin-bottom: 0.8em;
-  color: #3498db;
+  font-size: 2.2em;
+  margin: 2rem 0;
+  color: #2c3e50;
+}
+
+h3 {
+  color: #2c3e50;
+  font-size: 1.5em;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .header {
   display: flex;
   justify-content: center;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
+  padding: 20px;
 }
 
 .foto {
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.foto:hover {
+  transform: scale(1.05);
 }
 
 .foto img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
-  border: 3px solid #fff;
+  border: 4px solid #fff;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.foto img:hover {
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
 }
 
 .timeline {
   position: relative;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2em 0;
 }
@@ -49,34 +100,47 @@ h2 {
 .timeline::after {
   content: '';
   position: absolute;
-  width: 2px;
-  background-color: #ddd;
+  width: 3px;
+  background: linear-gradient(to bottom, #3498db, #2980b9);
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -1px;
+  margin-left: -1.5px;
   z-index: -1;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
 }
 
 .container {
-  padding: 10px 0;
+  padding: 15px 0;
   position: relative;
   background-color: inherit;
   width: 48%;
   margin-bottom: 40px;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
 }
 
 .container::after {
   content: '';
   position: absolute;
-  width: 12px;
-  height: 12px;
-  right: -6px;
-  background-color: white;
+  width: 16px;
+  height: 16px;
+  right: -8px;
+  background-color: #fff;
   border: 4px solid #3498db;
   top: 18px;
   border-radius: 50%;
   z-index: 1;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+  transition: all 0.3s ease;
+}
+
+.container:hover::after {
+  background-color: #3498db;
+  border-color: #fff;
 }
 
 .left {
@@ -114,22 +178,36 @@ h2 {
 }
 
 .content {
-  padding: 20px;
-  background-color: #f8f8ff;
+  padding: 25px;
+  background-color: #fff;
   position: relative;
-  border-radius: 6px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
 
 .date {
   position: absolute;
-  top: -5px;    /* Adjusted top position to lift year boxes significantly*/
-  font-size: 0.9em;
+  top: -10px;
+  font-size: 1em;
   font-weight: bold;
   color: #fff;
-  background-color: #3498db;
-  padding: 5px 8px;
-  border-radius: 5px;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  padding: 8px 15px;
+  border-radius: 20px;
   z-index: 2;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.date:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .left .date {
@@ -140,31 +218,37 @@ h2 {
   left: 20px;
 }
 
-
 .content h2 {
   text-align: left;
   margin-top: 0;
+  margin-bottom: 15px;
   color: #2c3e50;
+  font-size: 1.4em;
 }
 
 .content p {
-  margin-bottom: 10px;
-  color: #555;
+  margin-bottom: 12px;
+  color: #444;
+  font-size: 1.05em;
+  line-height: 1.6;
 }
 
 .content button {
-  background-color: #3498db;
+  background: linear-gradient(135deg, #3498db, #2980b9);
   color: white;
-  padding: 10px 15px;
+  padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
   font-size: 1em;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
 }
 
 .content button:hover {
-  background-color: #2980b9;
+  background: linear-gradient(135deg, #2980b9, #3498db);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(52, 152, 219, 0.3);
 }
 
 .logros {
@@ -182,9 +266,10 @@ h2 {
 
 .educacion {
   text-align: center;
-  margin: 2em auto;
+  margin: 3em auto;
   width: 80%;
-  max-width: 800px;
+  max-width: 1000px;
+  padding: 20px;
 }
 
 .educacion ul {
@@ -193,12 +278,19 @@ h2 {
 }
 
 .educacion ul li {
-  margin-bottom: 1em;
-  padding: 1em;
-  background-color: #f8f8ff;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  text-align: left;
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+.educacion ul li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
 
 .linkedin-box {
@@ -227,7 +319,178 @@ h2 {
 .btn.linkedin i {
   margin-right: 10px;
 }
+
+.projects-container {
+  max-width: 1200px;
+  margin: 2em auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-content {
+  padding: 1.5em;
+}
+
+.project-content h3 {
+  color: #2c3e50;
+  font-size: 1.3em;
+  margin-bottom: 0.8em;
+}
+
+.project-content p {
+  color: #444;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 1.2em;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-bottom: 1.2em;
+}
+
+.project-tags span {
+  background: #f0f4f8;
+  color: #3498db;
+  padding: 0.4em 0.8em;
+  border-radius: 15px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.project-links {
+  display: flex;
+  gap: 1em;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.6em 1.2em;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+  background: linear-gradient(135deg, #2980b9, #3498db);
+  transform: translateY(-2px);
+}
+
+.project-btn i {
+  font-size: 1.1em;
+}
+
+.intereses-section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intereses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.interes-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interes-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.interes-card i {
+  font-size: 2.5rem;
+  color: #4d94ff;
+  margin-bottom: 1rem;
+}
+
+.interes-card h3 {
+  color: #333;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.interes-card p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+#circuit-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.25;
+}
+
+body > *:not(#circuit-bg) {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
   
+  .intereses-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
   
-   
-  
+  .interes-card {
+    padding: 1.5rem;
+  }
+}

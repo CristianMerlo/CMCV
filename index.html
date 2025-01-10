@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>Cristian Merlo</title>
-	<link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV profesional de Cristian Merlo - Supervisor de Ingeniería y Almacén">
+    <meta name="keywords" content="Cristian Merlo, CV, curriculum, ingeniería, supervisor, Burger King, Starbucks">
+    <title>Cristian Merlo | CV Profesional</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+    <canvas id="circuit-bg"></canvas>
 	<h1>Cristian Merlo</h1>
     <div class="header">
 		<div class="foto">
@@ -18,8 +25,46 @@
 	<div class="timeline">
         
 	  <div class="container left">
+	    <div class="date">2025</div>
+	    <div class="content">
+	      <h2>Líder de Ingeniería y Desarrollo</h2>
+	      <p>Burger King, Starbucks</p>
+		  <p>Gestión integral de proyectos de innovación y mejora continua</p>
+		  <p>Desarrollo de soluciones tecnológicas para optimización de procesos</p>
+	      <button onclick="toggleVisibility('2025')">Ver logros</button>
+          <div style="margin-bottom: 40px;"></div>
+	      <div id="2025" style="display:none">
+	        <ul>
+	          <li>Implementación de sistema de monitoreo IoT para equipos críticos</li>
+              <li>Desarrollo de dashboard centralizado para KPIs de mantenimiento</li>
+              <li>Optimización de costos operativos en un 25%</li>
+              <li>Liderazgo de equipo multidisciplinario para proyectos de automatización</li>
+	        </ul>  
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="container right">
+	    <div class="date">2024</div>
+	    <div class="content">
+	      <h2>Supervisor Senior de Ingeniería</h2>
+	      <p>Burger King, Starbucks</p>
+		  <p>Coordinación de proyectos de innovación tecnológica</p>
+	      <button onclick="toggleVisibility('2024')">Ver logros</button>
+          <div style="margin-bottom: 40px;"></div>
+	      <div id="2024" style="display:none">
+	        <ul>
+	          <li>Implementación de sistema de gestión digital para mantenimiento</li>
+              <li>Desarrollo de app móvil para gestión de inventario</li>
+              <li>Reducción de tiempos de respuesta en un 40%</li>
+              <li>Certificación del equipo en nuevas tecnologías</li>
+	        </ul>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="container left">
 	    <div class="date">2023</div>
-	    <i class="icon fa fa-home"></i>
 	    <div class="content">
 	      <h2>Supervisor de Ingeniería y Almacén</h2>
 	      <p>Burger King, Starbucks</p>
@@ -49,7 +94,6 @@
 	  
 	  <div class="container right">
 	    <div class="date">2020</div>
-	    <i class="icon fa fa-home"></i>
 	    <div class="content">
 	      <h2>Supervisor de Mantenimiento Regional para Burger King</h2>
 	      <p>Departamento Técnico Alsea (Burger King)</p>
@@ -69,7 +113,6 @@
 
 	  <div class="container left">
 	    <div class="date">2017</div>
-	    <i class="icon fa fa-home"></i>
 	    <div class="content">
 	      <h2>Supervisor de Mantenimiento Regional Multimarca</h2>
 	      <p>Departamento Técnico Alsea (Burger King, Starbucks)</p>
@@ -90,7 +133,6 @@
 	  
 	  <div class="container right">
 	    <div class="date">2016</div>
-	    <i class="icon fa fa-home"></i>
 	    <div class="content">
 	      <h2>Supervisor de Mantenimiento</h2>
 	      <p>Departamento Técnico Alsea (Burger King, Starbucks, PfChangs y Almacen)</p>
@@ -109,7 +151,6 @@
 	  
 	  <div class="container left">
 	    <div class="date">2015</div>
-	    <i class="icon fa fa-home"></i>
 	    <div class="content">
 	      <h2>Supervisor de Mantenimiento</h2>
 	      <p>Departamento Técnico Alsea (Burger King, Starbucks y PfChangs)</p>
@@ -128,7 +169,6 @@
 	  
 	  <div class="container right">
 	    <div class="date">2014</div>
-	    <i class="icon fa fa-home"></i>
 	    <div class="content">
 	      <h2>Supervisor de Mantenimiento</h2>
 	      <p>Departamento Técnico Alsea (Burger King y Starbucks)</p>
@@ -147,7 +187,6 @@
 
 	  <div class="container left">
 	    <div class="date">2012</div>
-	    <i class="icon fa fa-home"></i>
 	    <div class="content">
 	      <h2>Supervisor de Mantenimiento</h2>
 	      <p>Departamento Técnico Alsea (Burger King)</p>
@@ -167,7 +206,6 @@
 	  
 	  <div class="container right">
 	    <div class="date">2011</div>
-	    <i class="icon fa fa-home"></i>
 	    <div class="content">
 	      <h2>Coordinador Sr.</h2>
 	      <p>Departamento Técnico Alsea (Burger King)</p>
@@ -176,7 +214,6 @@
 
 	  <div class="container left">
 	    <div class="date">2010</div>
-	    <i class="icon fa fa-home"></i>
 	    <div class="content">
 	      <h2>Coordinador Jr.</h2>
 	      <p>Departamento Técnico Alsea (Burger King)</p>
@@ -185,7 +222,6 @@
 
 	  <div class="container right">
 	    <div class="date">2008</div>
-	    <i class="icon fa fa-home"></i>
 	    <div class="content">
 	      <h2>Técnico Sr.</h2>
 	      <p>Departamento Técnico Alsea (Burger King)</p>
@@ -194,7 +230,6 @@
 
 	  <div class="container left">
 	    <div class="date">2006</div>
-	    <i class="icon fa fa-home"></i>
 	    <div class="content">
 	      <h2>Técnico Ssr.</h2>
 	      <p>Departamento Técnico Alsea (Burger King)</p>
@@ -203,7 +238,6 @@
 
 	  <div class="container right">
 	    <div class="date">2005</div>
-	    <i class="icon fa fa-home"></i>
 	    <div class="content">
 	      <h2>Técnico de Mantenimiento Preventivo</h2>
 	      <p>Burger King</p>
@@ -212,18 +246,215 @@
 	  
 	  <div class="container left">
 	    <div class="date">2002</div>
-	    <i class="icon fa fa-home"></i>
 	    <div class="content">
 	      <h2>Operario (Crew - Bodeguero)</h2>
 	      <p>Burger King</p>
 	    </div>
 	  </div>
 	</div>
+
+	<h2>Proyectos Destacados</h2>
+	<div class="projects-container">
+		<div class="project-card">
+			<div class="project-image">
+				<img src="Images/placeholder-project.jpg" alt="CV Online">
+			</div>
+			<div class="project-content">
+				<h3>CV Online</h3>
+				<p>Curriculum vitae online desarrollado con HTML, CSS y JavaScript. Diseño responsive y moderno.</p>
+				<div class="project-tags">
+					<span>HTML</span>
+					<span>CSS</span>
+					<span>JavaScript</span>
+				</div>
+				<div class="project-links">
+					<a href="https://github.com/tuuser/cv-online" target="_blank" class="project-btn">
+						<i class="fab fa-github"></i> Código
+					</a>
+					<a href="https://tudominio.com/cv" target="_blank" class="project-btn">
+						<i class="fas fa-external-link-alt"></i> Demo
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="project-card">
+			<div class="project-image">
+				<img src="Images/placeholder-project.jpg" alt="Proyecto 2">
+			</div>
+			<div class="project-content">
+				<h3>Sistema de Gestión de Mantenimiento</h3>
+				<p>Aplicación web para gestión de mantenimiento preventivo y correctivo de equipos industriales.</p>
+				<div class="project-tags">
+					<span>Python</span>
+					<span>Django</span>
+					<span>PostgreSQL</span>
+				</div>
+				<div class="project-links">
+					<a href="#" target="_blank" class="project-btn">
+						<i class="fab fa-github"></i> Código
+					</a>
+					<a href="#" target="_blank" class="project-btn">
+						<i class="fas fa-external-link-alt"></i> Demo
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="project-card">
+			<div class="project-image">
+				<img src="Images/placeholder-project.jpg" alt="Proyecto 3">
+			</div>
+			<div class="project-content">
+				<h3>Dashboard de KPIs</h3>
+				<p>Sistema de visualización de indicadores clave de rendimiento para mantenimiento y gestión de equipos.</p>
+				<div class="project-tags">
+					<span>React</span>
+					<span>Node.js</span>
+					<span>MongoDB</span>
+					<span>Charts.js</span>
+				</div>
+				<div class="project-links">
+					<a href="#" target="_blank" class="project-btn">
+						<i class="fab fa-github"></i> Código
+					</a>
+					<a href="#" target="_blank" class="project-btn">
+						<i class="fas fa-external-link-alt"></i> Demo
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="project-card">
+			<div class="project-image">
+				<img src="Images/placeholder-project.jpg" alt="Proyecto 4">
+			</div>
+			<div class="project-content">
+				<h3>App de Gestión de Inventario</h3>
+				<p>Aplicación móvil para control y gestión de inventario de repuestos y equipamiento técnico.</p>
+				<div class="project-tags">
+					<span>Flutter</span>
+					<span>Firebase</span>
+					<span>REST API</span>
+				</div>
+				<div class="project-links">
+					<a href="#" target="_blank" class="project-btn">
+						<i class="fab fa-github"></i> Código
+					</a>
+					<a href="#" target="_blank" class="project-btn">
+						<i class="fas fa-external-link-alt"></i> Demo
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="project-card">
+			<div class="project-image">
+				<img src="Images/placeholder-project.jpg" alt="Proyecto 5">
+			</div>
+			<div class="project-content">
+				<h3>Sistema de Predicción de Mantenimiento</h3>
+				<p>Plataforma de mantenimiento predictivo utilizando machine learning para anticipar fallos en equipos.</p>
+				<div class="project-tags">
+					<span>Python</span>
+					<span>TensorFlow</span>
+					<span>SQL</span>
+					<span>IoT</span>
+				</div>
+				<div class="project-links">
+					<a href="#" target="_blank" class="project-btn">
+						<i class="fab fa-github"></i> Código
+					</a>
+					<a href="#" target="_blank" class="project-btn">
+						<i class="fas fa-external-link-alt"></i> Demo
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="project-card">
+			<div class="project-image">
+				<img src="Images/placeholder-project.jpg" alt="Proyecto 6">
+			</div>
+			<div class="project-content">
+				<h3>Portal de Capacitación Técnica</h3>
+				<p>Plataforma e-learning para capacitación técnica con módulos interactivos y seguimiento de progreso.</p>
+				<div class="project-tags">
+					<span>Vue.js</span>
+					<span>Express</span>
+					<span>MySQL</span>
+					<span>AWS</span>
+				</div>
+				<div class="project-links">
+					<a href="#" target="_blank" class="project-btn">
+						<i class="fab fa-github"></i> Código
+					</a>
+					<a href="#" target="_blank" class="project-btn">
+						<i class="fas fa-external-link-alt"></i> Demo
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="intereses-section">
+        <h2>Intereses</h2>
+        <div class="intereses-container">
+            <div class="interes-card">
+                <i class="fas fa-code"></i>
+                <h3>Programación</h3>
+                <p>Desarrollo de soluciones mediante código y herramientas modernas</p>
+            </div>
+            <div class="interes-card">
+                <i class="fas fa-brain"></i>
+                <h3>Inteligencia Artificial</h3>
+                <p>Exploración y aplicación de tecnologías IA en procesos industriales</p>
+            </div>
+            <div class="interes-card">
+                <i class="fas fa-cogs"></i>
+                <h3>Desarrollo de Procesos</h3>
+                <p>Creación y optimización de herramientas digitales para procesos empresariales</p>
+            </div>
+            <div class="interes-card">
+                <i class="fas fa-tools"></i>
+                <h3>No Code y Automatización</h3>
+                <p>Implementación de soluciones sin código y automatización de tareas</p>
+            </div>
+            <div class="interes-card">
+                <i class="fas fa-industry"></i>
+                <h3>Mantenimiento Digital</h3>
+                <p>Aplicación de herramientas digitales en procesos de mantenimiento</p>
+            </div>
+            <div class="interes-card">
+                <i class="fas fa-tasks"></i>
+                <h3>Metodologías Ágiles</h3>
+                <p>Implementación de marcos de trabajo ágiles para gestión de proyectos y procesos</p>
+            </div>
+            <div class="interes-card">
+                <i class="fas fa-users-cog"></i>
+                <h3>Desarrollo de Equipos</h3>
+                <p>Capacitación y formación de equipos de trabajo eficientes y autogestionados</p>
+            </div>
+            <div class="interes-card">
+                <i class="fas fa-boxes"></i>
+                <h3>Gestión de Activos</h3>
+                <p>Optimización de inventarios y gestión eficiente de activos fijos</p>
+            </div>
+        </div>
+    </div>
+
 	<div class="educacion">
         <h2>Capacitacion</h2>
         <ul>
-			<li>Certificacion en Programa Liderazgo Alsea 2024</li>
-            <li>Backend Developer (Alura Latam - Oracle) 2023</li>
+			<li>Certificación en Gestión de Proyectos Ágiles - PMI (2025)</li>
+			<li>Diplomado en Transformación Digital y Automatización Industrial (2024)</li>
+			<li>Certificación en Programa Liderazgo Alsea 2024</li>
+			<li>Certificación en Gestión de Mantenimiento Industrial</li>
+            <li>Certificación en Gestión de Activos ISO 55001</li>
+            <li>Certificación en Gestión de la Calidad ISO 9001</li>
+			<li>Tecnicatura en Mantenimiento Industrial</li>
+			<li>Tecnicatura en Electrónica</li>
+			<li>Backend Developer (Alura Latam - Oracle) 2023</li>
             <li>Técnico en Seguridad e Higiene (UTN) 2023</li>
 			<li>Especializacion en Gestion de Stocks (UTN) 2023</li>
 			<li>Programa Ejecutivo de Negociacion (Di Tella) 2023</li>
@@ -240,7 +471,7 @@
             <li>Idiomas Inglés First Certificate 1999</li>
             <li>Secundario Bachiller en Gestión y Administración de Empresas 1999</li>
         </ul>
-    </div>
+	</div>
 <a href="https://www.linkedin.com/in/cristian-merlo/">
     <button class="btn linkedin">
       <i class="fab fa-linkedin"></i>
@@ -257,6 +488,114 @@
 		   }
 		}
 	</script>
-
+    <script>
+        const canvas = document.getElementById('circuit-bg');
+        const ctx = canvas.getContext('2d');
+        
+        // Ajustar tamaño del canvas
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+        
+        // Configuración de circuitos
+        const circuits = [];
+        const circuitCount = 15;
+        const nodeRadius = 2;
+        const lineWidth = 1;
+        const circuitColor = '#4d94ff';
+        
+        // Clase para los nodos de circuito
+        class CircuitNode {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                this.connections = [];
+                this.progress = 0;
+                this.speed = 0.005 + Math.random() * 0.01;
+            }
+        }
+        
+        // Crear circuitos iniciales
+        function createCircuits() {
+            for (let i = 0; i < circuitCount; i++) {
+                const startX = Math.random() * canvas.width;
+                const startY = Math.random() * canvas.height;
+                const nodes = [];
+                
+                // Crear nodos para este circuito
+                let currentX = startX;
+                let currentY = startY;
+                const nodeCount = 3 + Math.floor(Math.random() * 4);
+                
+                for (let j = 0; j < nodeCount; j++) {
+                    const node = new CircuitNode(currentX, currentY);
+                    nodes.push(node);
+                    
+                    // Siguiente posición
+                    const angle = Math.random() * Math.PI * 2;
+                    const distance = 50 + Math.random() * 100;
+                    currentX += Math.cos(angle) * distance;
+                    currentY += Math.sin(angle) * distance;
+                }
+                
+                // Conectar nodos
+                for (let j = 0; j < nodes.length - 1; j++) {
+                    nodes[j].connections.push(nodes[j + 1]);
+                }
+                
+                circuits.push(nodes);
+            }
+        }
+        
+        // Dibujar circuitos
+        function drawCircuits() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            circuits.forEach(nodes => {
+                nodes.forEach(node => {
+                    // Dibujar conexiones
+                    node.connections.forEach(connected => {
+                        ctx.beginPath();
+                        ctx.strokeStyle = circuitColor;
+                        ctx.lineWidth = lineWidth;
+                        ctx.moveTo(node.x, node.y);
+                        ctx.lineTo(connected.x, connected.y);
+                        ctx.stroke();
+                        
+                        // Dibujar pulso
+                        const pulseX = node.x + (connected.x - node.x) * node.progress;
+                        const pulseY = node.y + (connected.y - node.y) * node.progress;
+                        
+                        ctx.beginPath();
+                        ctx.fillStyle = circuitColor;
+                        ctx.arc(pulseX, pulseY, nodeRadius * 1.5, 0, Math.PI * 2);
+                        ctx.fill();
+                        
+                        // Actualizar progreso
+                        node.progress += node.speed;
+                        if (node.progress >= 1) {
+                            node.progress = 0;
+                        }
+                    });
+                    
+                    // Dibujar nodos
+                    ctx.beginPath();
+                    ctx.fillStyle = circuitColor;
+                    ctx.arc(node.x, node.y, nodeRadius, 0, Math.PI * 2);
+                    ctx.fill();
+                });
+            });
+            
+            requestAnimationFrame(drawCircuits);
+        }
+        
+        // Iniciar animación
+        createCircuits();
+        drawCircuits();
+    </script>
 </body>
 </html>

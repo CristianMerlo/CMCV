@@ -394,29 +394,35 @@ h3 {
 
 .project-links {
   display: flex;
-  gap: 1em;
+  gap: 10px;
+  margin-top: 15px;
 }
 
 .project-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.5em;
-  padding: 0.6em 1.2em;
-  background: linear-gradient(135deg, #3498db, #2980b9);
-  color: white;
-  text-decoration: none;
-  border-radius: 25px;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
   font-size: 0.9em;
   transition: all 0.3s ease;
+  text-decoration: none;
+  color: #4a5568;
 }
 
-.project-btn:hover {
-  background: linear-gradient(135deg, #2980b9, #3498db);
+.project-btn:not(a) {
+  background-color: #e2e8f0;
+  cursor: default;
+}
+
+a.project-btn {
+  background-color: #4d94ff;
+  color: white;
+}
+
+a.project-btn:hover {
+  background-color: #3a7acc;
   transform: translateY(-2px);
-}
-
-.project-btn i {
-  font-size: 1.1em;
 }
 
 .intereses-section {

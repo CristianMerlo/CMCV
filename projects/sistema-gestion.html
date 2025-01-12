@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión - Cristian Merlo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    <link rel="stylesheet" type="text/css" href="project-style.css">
+</head>
+<body>
+    <canvas id="circuit-bg"></canvas>
+    
+    <div class="project-detail-container">
+        <div class="project-header">
+            <h1 class="project-title">Sistema de Gestión</h1>
+            <div class="project-meta">
+                <span class="project-year"><i class="far fa-calendar-alt"></i> 2023</span>
+                <div class="project-tags">
+                    <span>Gestión</span>
+                    <span>Procesos</span>
+                    <span>Optimización</span>
+                    <span>Eficiencia</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carrusel de imágenes -->
+        <div class="swiper project-carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../Images/sistema-gestion/placeholder.jpg" alt="Sistema de Gestión">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="project-content">
+            <section class="project-description">
+                <h2>Descripción del Proyecto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+
+            <section class="project-objectives">
+                <h2>Objetivos</h2>
+                <ul>
+                    <li>Optimizar procesos de gestión</li>
+                    <li>Mejorar el flujo de información</li>
+                    <li>Aumentar la eficiencia operativa</li>
+                    <li>Implementar indicadores de rendimiento</li>
+                    <li>Facilitar la toma de decisiones</li>
+                </ul>
+            </section>
+
+            <section class="project-results">
+                <h2>Resultados</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            </section>
+
+            <section class="project-methodology">
+                <h2>Metodología Aplicada</h2>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                
+                <div class="methodology-timeline">
+                    <div class="timeline-container">
+                        <div class="phase-item">
+                            <div class="phase-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3 class="phase-title">Diagnóstico</h3>
+                            <p class="phase-description">Análisis de procesos actuales</p>
+                        </div>
+                        
+                        <div class="phase-item">
+                            <div class="phase-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h3 class="phase-title">Diseño</h3>
+                            <p class="phase-description">Desarrollo del sistema de gestión</p>
+                        </div>
+                        
+                        <div class="phase-item">
+                            <div class="phase-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3 class="phase-title">Implementación</h3>
+                            <p class="phase-description">Puesta en marcha del sistema</p>
+                        </div>
+                        
+                        <div class="phase-item">
+                            <div class="phase-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="phase-title">Seguimiento</h3>
+                            <p class="phase-description">Monitoreo y mejora continua</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="back-to-portfolio">
+            <a href="../index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Volver al Portafolio
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        // Inicialización del carrusel
+        const swiper = new Swiper('.project-carousel', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        // Script del fondo de circuitos
+        const canvas = document.getElementById('circuit-bg');
+        const ctx = canvas.getContext('2d');
+        
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+        
+        const circuits = [];
+        const circuitCount = 15;
+        const nodeRadius = 2;
+        const lineWidth = 1;
+        const circuitColor = '#4d94ff';
+        
+        class CircuitNode {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                this.connections = [];
+                this.progress = 0;
+                this.speed = 0.005 + Math.random() * 0.01;
+            }
+        }
+        
+        function createCircuits() {
+            for (let i = 0; i < circuitCount; i++) {
+                const startX = Math.random() * canvas.width;
+                const startY = Math.random() * canvas.height;
+                const nodes = [];
+                
+                let currentX = startX;
+                let currentY = startY;
+                const nodeCount = 3 + Math.floor(Math.random() * 4);
+                
+                for (let j = 0; j < nodeCount; j++) {
+                    const node = new CircuitNode(currentX, currentY);
+                    nodes.push(node);
+                    
+                    const angle = Math.random() * Math.PI * 2;
+                    const distance = 50 + Math.random() * 100;
+                    currentX += Math.cos(angle) * distance;
+                    currentY += Math.sin(angle) * distance;
+                }
+                
+                for (let j = 0; j < nodes.length - 1; j++) {
+                    nodes[j].connections.push(nodes[j + 1]);
+                }
+                
+                circuits.push(nodes);
+            }
+        }
+        
+        function drawCircuits() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            circuits.forEach(nodes => {
+                nodes.forEach(node => {
+                    node.connections.forEach(connected => {
+                        ctx.beginPath();
+                        ctx.strokeStyle = circuitColor;
+                        ctx.lineWidth = lineWidth;
+                        ctx.moveTo(node.x, node.y);
+                        ctx.lineTo(connected.x, connected.y);
+                        ctx.stroke();
+                        
+                        const pulseX = node.x + (connected.x - node.x) * node.progress;
+                        const pulseY = node.y + (connected.y - node.y) * node.progress;
+                        
+                        ctx.beginPath();
+                        ctx.fillStyle = circuitColor;
+                        ctx.arc(pulseX, pulseY, nodeRadius * 1.5, 0, Math.PI * 2);
+                        ctx.fill();
+                        
+                        node.progress += node.speed;
+                        if (node.progress >= 1) {
+                            node.progress = 0;
+                        }
+                    });
+                    
+                    ctx.beginPath();
+                    ctx.fillStyle = circuitColor;
+                    ctx.arc(node.x, node.y, nodeRadius, 0, Math.PI * 2);
+                    ctx.fill();
+                });
+            });
+            
+            requestAnimationFrame(drawCircuits);
+        }
+        
+        createCircuits();
+        drawCircuits();
+    </script>
+</body>
+</html>

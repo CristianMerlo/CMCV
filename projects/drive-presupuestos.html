@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive Presupuestos - Cristian Merlo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    <link rel="stylesheet" type="text/css" href="project-style.css">
+</head>
+<body>
+    <canvas id="circuit-bg"></canvas>
+    
+    <div class="project-detail-container">
+        <div class="project-header">
+            <h1 class="project-title">Drive Presupuestos</h1>
+            <div class="project-meta">
+                <span class="project-year"><i class="far fa-calendar-alt"></i> 2023</span>
+                <div class="project-tags">
+                    <span>Finanzas</span>
+                    <span>Gestión</span>
+                    <span>Automatización</span>
+                    <span>Presupuestos</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carrusel de imágenes -->
+        <div class="swiper project-carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../Images/drive-presupuestos/drive portada.png" alt="Drive Presupuestos">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="project-content">
+            <section class="project-description">
+                <h2>Descripción del Proyecto</h2>
+                <p>"Este proyecto consistió en el desarrollo de una herramienta de gestión de presupuestos online para [Nombre de la Empresa], con el objetivo de centralizar, unificar y optimizar la gestión de presupuestos y el seguimiento de trabajos. La herramienta fue diseñada para facilitar la colaboración entre coordinadores y aprobadores, eliminando la gestión desordenada por correo electrónico y mejorando la eficiencia general del proceso."</p>
+            </section>
+
+            <section class="project-objectives">
+                <h2>Objetivos</h2>
+                <ul>
+                    <li>Centralizar la gestión de presupuestos en una plataforma online.</li>
+                    <li>Unificar el proceso de subida, aprobación y seguimiento de presupuestos.</li>
+                    <li>Eliminar la gestión de presupuestos por correo electrónico.</li>
+                    <li>Mejorar la colaboración entre coordinadores y aprobadores.</li>
+                    <li>Facilitar el seguimiento de trabajos y la gestión de órdenes.</li>
+                     <li>Optimizar la gestión general de presupuestos y el flujo de información.</li>
+                </ul>
+            </section>
+
+            <section class="project-results">
+                <h2>Resultados</h2>
+                <p>El desarrollo de la herramienta de gestión de presupuestos online resultó en una mejora significativa en la eficiencia del proceso. Se logró centralizar la información, eliminar la gestión por correo electrónico, facilitar la colaboración entre equipos y proporcionar un seguimiento más efectivo de los trabajos. La herramienta se ha adaptado y escalado con éxito desde su implementación inicial hasta su uso generalizado en todo el departamento.</p>
+            </section>
+
+            <section class="project-methodology">
+                <h2>Metodología Aplicada</h2>
+                <p>El proyecto se abordó de manera iterativa, comenzando con un análisis de las necesidades del área y luego escalando la herramienta a todo el departamento. Se implementó un diseño que priorizó la usabilidad y la adaptabilidad a las necesidades cambiantes. La metodología se dividió en cuatro fases principales:</p>
+        
+                <div class="methodology-timeline">
+                    <div class="timeline-container">
+                        <div class="phase-item">
+                            <div class="phase-icon">
+                               <i class="fas fa-search-dollar"></i>
+                            </div>
+                            <h3 class="phase-title">Análisis</h3>
+                            <p class="phase-description">Análisis detallado del proceso de gestión de presupuestos, identificando las necesidades y puntos débiles del sistema anterior.</p>
+                        </div>
+        
+                        <div class="phase-item">
+                            <div class="phase-icon">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                            </div>
+                            <h3 class="phase-title">Diseño</h3>
+                            <p class="phase-description">Diseño de la estructura de la herramienta y la definición de los flujos de trabajo, priorizando la colaboración y la claridad.</p>
+                        </div>
+        
+                        <div class="phase-item">
+                            <div class="phase-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3 class="phase-title">Implementación</h3>
+                            <p class="phase-description">Desarrollo de la herramienta, configuración de la interfaz y la capacitación de los usuarios.</p>
+                        </div>
+        
+                        <div class="phase-item">
+                            <div class="phase-icon">
+                                 <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <h3 class="phase-title">Control</h3>
+                            <p class="phase-description">Seguimiento continuo del funcionamiento de la herramienta, recopilación de feedback de los usuarios y ajustes para optimizar el rendimiento.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="back-to-portfolio">
+            <a href="../index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Volver al Portafolio
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        // Scripts del carrusel y fondo (mismo código que en las otras páginas)
+        const swiper = new Swiper('.project-carousel', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        // Script del fondo de circuitos
+        const canvas = document.getElementById('circuit-bg');
+        const ctx = canvas.getContext('2d');
+        
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+        
+        const circuits = [];
+        const circuitCount = 15;
+        const nodeRadius = 2;
+        const lineWidth = 1;
+        const circuitColor = '#4d94ff';
+        
+        class CircuitNode {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                this.connections = [];
+                this.progress = 0;
+                this.speed = 0.005 + Math.random() * 0.01;
+            }
+        }
+        
+        function createCircuits() {
+            for (let i = 0; i < circuitCount; i++) {
+                const startX = Math.random() * canvas.width;
+                const startY = Math.random() * canvas.height;
+                const nodes = [];
+                
+                let currentX = startX;
+                let currentY = startY;
+                const nodeCount = 3 + Math.floor(Math.random() * 4);
+                
+                for (let j = 0; j < nodeCount; j++) {
+                    const node = new CircuitNode(currentX, currentY);
+                    nodes.push(node);
+                    
+                    const angle = Math.random() * Math.PI * 2;
+                    const distance = 50 + Math.random() * 100;
+                    currentX += Math.cos(angle) * distance;
+                    currentY += Math.sin(angle) * distance;
+                }
+                
+                for (let j = 0; j < nodes.length - 1; j++) {
+                    nodes[j].connections.push(nodes[j + 1]);
+                }
+                
+                circuits.push(nodes);
+            }
+        }
+        
+        function drawCircuits() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            circuits.forEach(nodes => {
+                nodes.forEach(node => {
+                    node.connections.forEach(connected => {
+                        ctx.beginPath();
+                        ctx.strokeStyle = circuitColor;
+                        ctx.lineWidth = lineWidth;
+                        ctx.moveTo(node.x, node.y);
+                        ctx.lineTo(connected.x, connected.y);
+                        ctx.stroke();
+                        
+                        const pulseX = node.x + (connected.x - node.x) * node.progress;
+                        const pulseY = node.y + (connected.y - node.y) * node.progress;
+                        
+                        ctx.beginPath();
+                        ctx.fillStyle = circuitColor;
+                        ctx.arc(pulseX, pulseY, nodeRadius * 1.5, 0, Math.PI * 2);
+                        ctx.fill();
+                        
+                        node.progress += node.speed;
+                        if (node.progress >= 1) {
+                            node.progress = 0;
+                        }
+                    });
+                    
+                    ctx.beginPath();
+                    ctx.fillStyle = circuitColor;
+                    ctx.arc(node.x, node.y, nodeRadius, 0, Math.PI * 2);
+                    ctx.fill();
+                });
+            });
+            
+            requestAnimationFrame(drawCircuits);
+        }
+        
+        createCircuits();
+        drawCircuits();
+    </script>
+</body>
+</html>
